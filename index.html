@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather Dashboard with Calendar Integration">
+    <title>Weather Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Weather Dashboard with Calendar Integration</h1>
+        <div class="form-group">
+            <input type="text" id="city" class="form-control" placeholder="Enter City Name">
+        </div>
+        <button id="getWeatherBtn" class="btn btn-primary mb-4">Get Weather</button>
+        <div id="weatherInfo" "card d-none">
+            <div class="card-body">
+                <h5 class="card-title" id="cityName"></h5>
+                <p class="card-text" id="temperature"></p>
+                <p class="card-text" id="weatherDescription"></p>
+                <p class="card-text" id="humidity"></p>
+                <p class="card-text" id="windSpeed"></p>
+            </div>
+          
+        </div>
+        <div id="calendar"> "card d-none">
+            <div class="card-body">
+                <h5 class="card-title" id="calendarTitle"></h5>
+                <p class="card-text" id="calendarDescription"></p>
+                <p class="card-text" id="calendarLocation"></p>
+                <p class="card-text" id="calendarDate"></p>
+                <p class="card-text" id="calendarTime"></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
